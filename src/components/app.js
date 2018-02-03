@@ -20,10 +20,10 @@ angular.module('video-player')
         params.type = 'video';
         params.videoEmbeddable = true;
         
-        youTube.search(params, this.callback);
+        youTube.search(params, this.selectVideo);
       };
 
-      this.callback = (videos) => {
+      this.selectVideo = (videos) => {
         this.videos = videos;
         this.currentVideo = videos[0];
       };
