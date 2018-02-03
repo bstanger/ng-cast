@@ -9,7 +9,7 @@ angular.module('video-player')
         this.currentVideo = video;
       };
 
-      this.search = (query) => {
+      this.searchResults = (query) => {
         console.log(query);
         
         var params = {};
@@ -28,7 +28,7 @@ angular.module('video-player')
         this.currentVideo = videos[0];
       };
 
-      this.search();
+      this.searchResults();
     
     },
     templateUrl: 'src/templates/app.html'
