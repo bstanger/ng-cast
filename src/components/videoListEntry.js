@@ -3,7 +3,7 @@ angular.module('video-player')
     bindings: {
       video: '<',
       currentVideo: '<',
-      titleClick: '<'
+      onClick: '<'
     },
     // controller: function() {
     //   this.handleTitleClick = (video) => {
